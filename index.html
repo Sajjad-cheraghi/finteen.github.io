@@ -26,8 +26,8 @@
       max-width: 100%;
       height: auto;
       display: block;
+      transition: all .5s ease;
       
-      transition: transform 0.3s ease;
     }
     .footer{
       margin-top: -10%; /* overlap */
@@ -37,10 +37,15 @@
       z-index: 2;
       cursor: pointer;
       animation: pulse 2s ease-in-out infinite;
+      
     }
 
     .image-stack .middle:hover {
-      transform: scale(1.02);
+
+      
+     
+      transition: all 1s ease;
+      opacity: .9;
     }
     
 
