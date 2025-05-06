@@ -1,77 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FinTeen – Download MVP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FINTEEN</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #D1F4F9, #F9F1FF);
-      color: #222;
-      text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
     }
 
-    .container {
+    .image-stack {
       max-width: 600px;
       margin: auto;
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
     }
 
-    h1 {
-      font-size: 2em;
-      color: #4B0082;
+    .image-stack img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      
+      transition: transform 0.3s ease;
+    }
+    .footer{
+      margin-top: -10%; /* overlap */
+    }
+    .image-stack .middle {
+      margin-top: -20%; /* overlap */
+      z-index: 2;
+      cursor: pointer;
     }
 
-    p {
-      font-size: 1.1em;
-      margin-bottom: 30px;
-      color: #555;
-    }
-
-    .download-btn {
-      display: inline-block;
-      background-color: #4B0082;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1.1em;
-      transition: 0.3s;
-    }
-
-    .download-btn:hover {
-      background-color: #360062;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
+    .image-stack .middle:hover {
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎮 FinTeen MVP is Ready!</h1>
-    <p>
-      FinTeen is a hypercasual mobile game that helps Iranian teens learn financial literacy through fun gameplay.
-    </p>
-    <a href="LINK_TO_YOUR_MVP_FILE" class="download-btn" download>
-      📥 Download MVP
+
+  <div class="image-stack">
+    <img src="images/top.png" alt="FINTEEN">
+    
+    <a href="MVP-Finteen.apk" download>
+      <img src="images/center.png" alt="FINTEEN" class="middle">
     </a>
-    <p style="margin-top: 20px;">
-      or <a href="LINK_TO_ONLINE_MVP" style="color:#4B0082;">play the web version</a>
-    </p>
+    
+    <img src="images/footer.png" class="footer" alt="FINTEEN">
   </div>
-  <footer>
-    Created by Shadi Sedghinejad · FinTech for Future
-  </footer>
+
 </body>
 </html>
