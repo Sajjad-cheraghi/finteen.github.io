@@ -8,6 +8,10 @@
 
   <title>FINTEEN</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+    *{
+       font-family: "Fredoka", sans-serif;
+    }
     body {
       margin: 0;
       padding: 20px;
@@ -51,7 +55,19 @@
       opacity: .9;
     }
     
-
+.pblock{
+  display: block;
+  width: 70%;
+  padding: 10px;
+  background-color: #ffffff71;
+  font-weight: 700;
+  color: #6A57FF;
+text-align: center;
+margin: 3rem 0;
+border-radius: 50px;;
+filter: drop-shadow(0 0 35px #ffffff)drop-shadow(0 0 35px #ffffff)drop-shadow(0 0 35px #ffffff);
+z-index: -10;
+}
 
 @keyframes pulse {
   0% {
@@ -69,12 +85,16 @@
 <body>
 
   <div class="image-stack">
-    <img src="images/top.png" alt="FINTEEN">
+    <img src="images/top.png" alt="FINTEEN" style="border-radius: 25px;">
     
     <a href="Finteen.apk" download>
       <img src="images/center.png" alt="FINTEEN" class="middle">
     </a>
-    
+    <div class="pblock">
+    <h3>
+      YOUR MONEY. YOUR GAME. YOUR FUTURE.
+    </h3>
+    </div>
     <img src="images/footer.png" class="footer" alt="FINTEEN">
   </div>
 
